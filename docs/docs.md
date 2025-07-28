@@ -12,7 +12,6 @@ The metaphysical version of a product backlog.
 
 - Features are ordered based on tarot draws or visions.
 - Prioritization symbols:
-
   - **Sun** card → High Priority
   - **Devil** card → Blocker
   - **Realm of the Dead** → Icebox
@@ -64,7 +63,6 @@ The sacred alternative to a retrospective.
 
 - Team reflects not on performance but on inner transformation.
 - Typical questions:
-
   - What code no longer serves you?
   - What did you let go of emotionally?
   - What did the code teach you?
@@ -76,7 +74,6 @@ The sacred alternative to a retrospective.
 Used before releasing into production.
 
 - Contents include:
-
   - Target server
   - Planetary energy supporting the deploy
   - Was incense burned?

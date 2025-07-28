@@ -50,7 +50,6 @@
 ### **Content Manifestation Phase (Next)**
 
 1. **Page Implementation**
-
    - Homepage with portal cards and hero section
    - Manifesto with 12 principles and sacred oath
    - Roles & Rituals with team structure and ceremonies

@@ -55,7 +55,6 @@
 ### **Phase 1: Foundation Manifestation** (Next 2-3 Sessions)
 
 1. **Project Setup**
-
    - Initialize Next.js with TypeScript and TailwindCSS
    - Configure testing framework and quality tools
    - Set up GitHub repository with Actions workflow
@@ -70,7 +69,6 @@
 ### **Phase 2: Content Integration** (Following 3-4 Sessions)
 
 1. **Page Implementation**
-
    - Homepage with hero section and portal cards
    - Manifesto page with 12 principles and sacred oath
    - Roles & Rituals page with team structure

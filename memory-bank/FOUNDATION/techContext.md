@@ -115,16 +115,16 @@ fdd-site/
 
 ```typescript
 // Layout Components (cosmic structure)
-Layout, Navigation, Footer;
+(Layout, Navigation, Footer);
 
 // Mystical Components (FDD-specific)
-MysticQuote, FateButton, RoleCard, RitualBlock, OathBlock;
+(MysticQuote, FateButton, RoleCard, RitualBlock, OathBlock);
 
 // Content Components (markdown integration)
-MarkdownRenderer, ContentPage, DynamicContent;
+(MarkdownRenderer, ContentPage, DynamicContent);
 
 // Interactive Components (cosmic features)
-TarotWidget, RoleGenerator, FateDecisionEngine;
+(TarotWidget, RoleGenerator, FateDecisionEngine);
 ```
 
 ### **Component Naming Convention**

@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals"
-  ],
+  "extends": ["next/core-web-vitals"],
   "rules": {
     "@next/next/no-img-element": "error",
     "prefer-const": "error"
@@ -9,4 +7,4 @@
   "env": {
     "jest": true
   }
-} 
+}

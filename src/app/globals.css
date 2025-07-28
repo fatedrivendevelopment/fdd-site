@@ -7,21 +7,23 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-cosmic-dark text-white;
-    font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
-  
+
   * {
     @apply border-cosmic-purple/20;
   }
-  
+
   /* Sacred selection styles */
   *::selection {
     @apply bg-cosmic-purple/50 text-cosmic-gold;
   }
-  
+
   *::-moz-selection {
     @apply bg-cosmic-purple/50 text-cosmic-gold;
   }
@@ -34,18 +36,18 @@
     @apply mx-auto px-4 sm:px-6 lg:px-8;
     max-width: 1200px;
   }
-  
+
   /* Cosmic text utilities */
   .cosmic-text {
     @apply bg-gradient-to-r from-cosmic-gold via-aura-violet to-aura-blue bg-clip-text text-transparent;
     background-size: 200% 100%;
     animation: cosmic-shimmer 3s ease-in-out infinite;
   }
-  
+
   .sacred-text {
     @apply text-cosmic-silver/90 leading-relaxed;
   }
-  
+
   /* Mystical button styles */
   .fate-button {
     @apply px-6 py-3 bg-cosmic-purple hover:bg-cosmic-purple/80 text-white rounded-lg;
@@ -53,18 +55,18 @@
     @apply border border-cosmic-purple/50 hover:border-cosmic-gold/50;
     @apply shadow-lg hover:shadow-cosmic-purple/25;
   }
-  
+
   .fate-button:focus {
     @apply outline-none ring-2 ring-cosmic-gold/50 ring-offset-2 ring-offset-cosmic-dark;
   }
-  
+
   /* Sacred card styles */
   .mystical-card {
     @apply bg-cosmic-dark/80 backdrop-blur-lg border border-cosmic-purple/30;
     @apply rounded-lg p-6 transition-all duration-300;
     @apply hover:border-cosmic-purple/50 hover:shadow-lg hover:shadow-cosmic-purple/10;
   }
-  
+
   /* Cosmic form styles */
   .cosmic-input {
     @apply bg-cosmic-dark/50 border border-cosmic-purple/30 rounded-lg px-4 py-2;
@@ -72,13 +74,13 @@
     @apply focus:outline-none focus:border-cosmic-purple focus:ring-1 focus:ring-cosmic-purple;
     @apply transition-colors duration-300;
   }
-  
+
   /* Sacred link styles */
   .mystical-link {
     @apply text-cosmic-gold hover:text-cosmic-gold/80 underline;
     @apply transition-colors duration-300;
   }
-  
+
   /* Navigation active states */
   .nav-active {
     @apply bg-cosmic-purple/30 text-cosmic-gold;
@@ -110,7 +112,8 @@
     @apply mb-4 text-cosmic-silver/90;
   }
 
-  .mystical-content ul, .mystical-content ol {
+  .mystical-content ul,
+  .mystical-content ol {
     @apply mb-4 ml-6;
   }
 
@@ -146,11 +149,13 @@
     @apply text-aura-blue hover:text-aura-violet transition-colors underline;
   }
 
-  .mystical-content strong, .mystical-content b {
+  .mystical-content strong,
+  .mystical-content b {
     @apply font-semibold text-cosmic-gold;
   }
 
-  .mystical-content em, .mystical-content i {
+  .mystical-content em,
+  .mystical-content i {
     @apply italic text-aura-violet;
   }
 
@@ -162,7 +167,8 @@
     @apply w-full border-collapse border border-cosmic-silver/30 mb-4;
   }
 
-  .mystical-content th, .mystical-content td {
+  .mystical-content th,
+  .mystical-content td {
     @apply border border-cosmic-silver/20 px-4 py-2;
   }
 
@@ -179,96 +185,121 @@
 @layer utilities {
   /* Cosmic keyframe animations */
   @keyframes cosmic-shimmer {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
   }
-  
+
   @keyframes aura-pulse {
-    0%, 100% { 
+    0%,
+    100% {
       box-shadow: 0 0 20px rgba(139, 69, 19, 0.6);
       transform: scale(1);
     }
-    50% { 
+    50% {
       box-shadow: 0 0 40px rgba(139, 69, 19, 0.9);
       transform: scale(1.02);
     }
   }
-  
+
   @keyframes cosmic-float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
-  
+
   @keyframes mystical-glow {
-    0% { opacity: 0.7; }
-    100% { opacity: 1; }
-  }
-  
-  @keyframes spiritual-fade {
-    0% { 
-      opacity: 0; 
-      transform: translateY(20px);
+    0% {
+      opacity: 0.7;
     }
-    100% { 
-      opacity: 1; 
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes sacred-slide {
-    0% { 
-      transform: translateX(-100%); 
-      opacity: 0;
-    }
-    100% { 
-      transform: translateX(0); 
+    100% {
       opacity: 1;
     }
   }
-  
+
+  @keyframes spiritual-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes sacred-slide {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
   /* Enhanced mystical glow utility */
   .mystical-glow {
-    box-shadow: 
+    box-shadow:
       0 0 20px rgba(139, 69, 19, 0.4),
       0 0 40px rgba(139, 69, 19, 0.2),
       inset 0 0 20px rgba(255, 255, 255, 0.1);
     animation: aura-pulse 3s ease-in-out infinite;
   }
-  
+
   /* Cosmic gradient backgrounds */
   .bg-cosmic-gradient {
     background: linear-gradient(135deg, #1e1b4b 0%, #581c87 50%, #7c2d12 100%);
   }
-  
+
   .bg-mystical-radial {
-    background: radial-gradient(circle at center, rgba(88,28,135,0.3) 0%, rgba(30,27,75,0.8) 70%, rgba(15,15,35,0.95) 100%);
+    background: radial-gradient(
+      circle at center,
+      rgba(88, 28, 135, 0.3) 0%,
+      rgba(30, 27, 75, 0.8) 70%,
+      rgba(15, 15, 35, 0.95) 100%
+    );
   }
-  
+
   .bg-aura-shimmer {
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
   }
-  
+
   /* Sacred scroll styles */
   .sacred-scroll {
     scrollbar-width: thin;
-    scrollbar-color: rgba(88,28,135,0.5) transparent;
+    scrollbar-color: rgba(88, 28, 135, 0.5) transparent;
   }
-  
+
   .sacred-scroll::-webkit-scrollbar {
     width: 6px;
   }
-  
+
   .sacred-scroll::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   .sacred-scroll::-webkit-scrollbar-thumb {
-    background: rgba(88,28,135,0.5);
+    background: rgba(88, 28, 135, 0.5);
     border-radius: 3px;
   }
-  
+
   .sacred-scroll::-webkit-scrollbar-thumb:hover {
-    background: rgba(88,28,135,0.7);
+    background: rgba(88, 28, 135, 0.7);
   }
 }
 
@@ -277,11 +308,11 @@
   .cosmic-text {
     @apply text-base;
   }
-  
+
   .mystical-card {
     @apply p-4;
   }
-  
+
   .fate-button {
     @apply px-4 py-2 text-sm;
   }
@@ -295,7 +326,7 @@
   .animate-aura-pulse {
     animation: none !important;
   }
-  
+
   * {
     transition-duration: 0.01ms !important;
   }
@@ -307,11 +338,11 @@
     @apply text-white;
     background: none;
   }
-  
+
   .mystical-card {
     @apply border-white/50;
   }
-  
+
   .fate-button {
     @apply border-white/70;
   }
@@ -322,18 +353,18 @@
   body {
     @apply bg-white text-black;
   }
-  
+
   .cosmic-text {
     @apply text-black;
     background: none;
   }
-  
+
   .mystical-card {
     @apply border border-gray-300 bg-white;
   }
-  
+
   .bg-cosmic-gradient,
   .bg-mystical-radial {
     background: white !important;
   }
-} 
+}

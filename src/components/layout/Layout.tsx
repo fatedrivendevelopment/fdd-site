@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React, { ReactNode } from 'react';
-import { MysticalNavigation } from './MysticalNavigation';
-import { SacredFooter } from './SacredFooter';
-import { CosmicErrorBoundary } from './CosmicErrorBoundary';
-import { MysticalComponentProps } from '@/types';
+import React, { ReactNode } from "react";
+import { MysticalNavigation } from "./MysticalNavigation";
+import { SacredFooter } from "./SacredFooter";
+import { CosmicErrorBoundary } from "./CosmicErrorBoundary";
+import { MysticalComponentProps } from "@/types";
 
 interface LayoutProps extends MysticalComponentProps {
   children: ReactNode;
@@ -18,12 +18,12 @@ export const Layout: React.FC<LayoutProps> = ({
   pageTitle,
   showNavigation = true,
   showFooter = true,
-  cosmicEnergy = 'medium',
-  className = '',
+  cosmicEnergy = "medium",
+  className = "",
 }) => {
   return (
     <CosmicErrorBoundary>
-      <div 
+      <div
         className={`min-h-screen bg-cosmic-gradient text-white ${className}`}
         data-testid="mystical-layout"
         data-cosmic-energy={cosmicEnergy}
@@ -31,7 +31,7 @@ export const Layout: React.FC<LayoutProps> = ({
         {/* Cosmic background effects */}
         <div className="fixed inset-0 bg-mystical-radial pointer-events-none" />
         <div className="fixed inset-0 bg-aura-shimmer opacity-10 pointer-events-none animate-pulse" />
-        
+
         {/* Main layout structure */}
         <div className="relative z-10 flex flex-col min-h-screen">
           {/* Mystical navigation */}
@@ -42,10 +42,12 @@ export const Layout: React.FC<LayoutProps> = ({
           )}
 
           {/* Sacred content area */}
-          <main 
+          <main
             className="flex-1 relative"
             role="main"
-            aria-label={pageTitle ? `${pageTitle} - Sacred Content` : 'Mystical Content'}
+            aria-label={
+              pageTitle ? `${pageTitle} - Sacred Content` : "Mystical Content"
+            }
           >
             {/* Page title if provided */}
             {pageTitle && (
@@ -57,11 +59,9 @@ export const Layout: React.FC<LayoutProps> = ({
                 </div>
               </div>
             )}
-            
+
             {/* Main content */}
-            <div className="container mx-auto px-4 py-8">
-              {children}
-            </div>
+            <div className="container mx-auto px-4 py-8">{children}</div>
           </main>
 
           {/* Sacred footer */}
@@ -74,4 +74,4 @@ export const Layout: React.FC<LayoutProps> = ({
       </div>
     </CosmicErrorBoundary>
   );
-}; 
+};

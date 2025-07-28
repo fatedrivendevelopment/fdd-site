@@ -11,7 +11,6 @@ Fate-Driven Development (FDD) employs a mystical suite of tools to align your co
 - Replacement for Jira
 - Uses intuitive symbols instead of tickets
 - Task states:
-
   - ✨ **Işıkta** (In the Light)
   - ↺ **Geçişte** (In Transition)
   - ⚫ **Gölgedeki** (In Shadow)
@@ -68,7 +67,6 @@ Custom commit hooks to maintain energetic balance.
 
 - Build outcomes depend on planetary alignment
 - Notification samples:
-
   - ✅ "Code aligns with the cosmos."
   - ❌ "Saturn interfered. Try again later."
 
@@ -80,7 +78,6 @@ Custom commit hooks to maintain energetic balance.
 
 - No velocity tracking
 - Metrics:
-
   - Energetic throughput
   - Cosmic resonance level
 

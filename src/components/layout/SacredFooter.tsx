@@ -1,30 +1,38 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { MysticalComponentProps } from '@/types';
+import React from "react";
+import Link from "next/link";
+import { MysticalComponentProps } from "@/types";
 
 const cosmicLinks = [
-  { href: 'https://github.com/fatedrivendevelopment', label: 'GitHub', icon: '⭐' },
-  { href: 'https://twitter.com/fatedrivendev', label: 'X (Twitter)', icon: '🐦' },
-  { href: 'https://discord.gg/fatedrivendev', label: 'Discord', icon: '💬' },
+  {
+    href: "https://github.com/fatedrivendevelopment",
+    label: "GitHub",
+    icon: "⭐",
+  },
+  {
+    href: "https://twitter.com/fatedrivendev",
+    label: "X (Twitter)",
+    icon: "🐦",
+  },
+  { href: "https://discord.gg/fatedrivendev", label: "Discord", icon: "💬" },
 ];
 
 const siteLinks = [
-  { href: '/manifesto', label: 'Sacred Principles' },
-  { href: '/roles-and-rituals', label: 'Mystical Roles' },
-  { href: '/faq', label: 'Cosmic Q&A' },
-  { href: '/contribute', label: 'Join the Movement' },
+  { href: "/manifesto", label: "Sacred Principles" },
+  { href: "/roles-and-rituals", label: "Mystical Roles" },
+  { href: "/faq", label: "Cosmic Q&A" },
+  { href: "/contribute", label: "Join the Movement" },
 ];
 
 export const SacredFooter: React.FC<MysticalComponentProps> = ({
-  cosmicEnergy = 'medium',
-  className = '',
+  cosmicEnergy = "medium",
+  className = "",
 }) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer 
+    <footer
       className={`py-8 ${className}`}
       data-testid="sacred-footer"
       role="contentinfo"
@@ -34,7 +42,9 @@ export const SacredFooter: React.FC<MysticalComponentProps> = ({
           {/* Mystical branding */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="text-2xl" role="img" aria-label="Crystal ball">🔮</div>
+              <div className="text-2xl" role="img" aria-label="Crystal ball">
+                🔮
+              </div>
               <div>
                 <div className="text-xl font-bold cosmic-text">
                   Fate-Driven Development
@@ -45,7 +55,7 @@ export const SacredFooter: React.FC<MysticalComponentProps> = ({
               </div>
             </div>
             <p className="text-sm text-cosmic-silver/70 leading-relaxed">
-              A satirical software methodology that embraces cosmic uncertainty 
+              A satirical software methodology that embraces cosmic uncertainty
               and spiritual rebellion against development dogma.
             </p>
           </div>
@@ -84,12 +94,14 @@ export const SacredFooter: React.FC<MysticalComponentProps> = ({
                   className="flex items-center space-x-2 text-sm text-cosmic-silver/80 hover:text-cosmic-gold transition-colors duration-300 hover:scale-105 transform"
                   aria-label={`${link.label} (opens in new tab)`}
                 >
-                  <span className="text-lg" aria-hidden="true">{link.icon}</span>
+                  <span className="text-lg" aria-hidden="true">
+                    {link.icon}
+                  </span>
                   <span className="hidden sm:inline">{link.label}</span>
                 </a>
               ))}
             </div>
-            
+
             {/* Mystical newsletter signup placeholder */}
             <div className="mt-4">
               <p className="text-xs text-cosmic-silver/60 mb-2">
@@ -116,17 +128,16 @@ export const SacredFooter: React.FC<MysticalComponentProps> = ({
         {/* Cosmic copyright and disclaimers */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-cosmic-silver/60">
-            © {currentYear} Fate-Driven Development. Licensed under{' '}
-            <Link 
-              href="/license" 
-              className="text-cosmic-gold hover:underline"
-            >
+            © {currentYear} Fate-Driven Development. Licensed under{" "}
+            <Link href="/license" className="text-cosmic-gold hover:underline">
               Spiritual License v1.0
             </Link>
           </div>
-          
+
           <div className="text-xs text-cosmic-silver/50 text-center md:text-right">
-            <p>This page was rendered under the influence of Mercury retrograde.</p>
+            <p>
+              This page was rendered under the influence of Mercury retrograde.
+            </p>
             <p className="mt-1">
               No actual mystical forces were harmed in the making of this site.
             </p>
@@ -135,14 +146,14 @@ export const SacredFooter: React.FC<MysticalComponentProps> = ({
 
         {/* Easter egg */}
         <div className="mt-4 text-center">
-          <button 
+          <button
             className="text-xs text-cosmic-silver/30 hover:text-cosmic-gold transition-colors duration-300"
             title="Invoke cosmic easter egg"
             onClick={() => {
               // Easter egg: briefly show all cosmic effects
-              document.body.classList.add('animate-aura-pulse');
+              document.body.classList.add("animate-aura-pulse");
               setTimeout(() => {
-                document.body.classList.remove('animate-aura-pulse');
+                document.body.classList.remove("animate-aura-pulse");
               }, 2000);
             }}
           >
@@ -152,4 +163,4 @@ export const SacredFooter: React.FC<MysticalComponentProps> = ({
       </div>
     </footer>
   );
-}; 
+};

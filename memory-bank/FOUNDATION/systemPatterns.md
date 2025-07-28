@@ -322,7 +322,7 @@ const generateCosmicLinks = (content: string, allPages: Page[]) => {
   Object.entries(linkPatterns).forEach(([term, link]) => {
     linkedContent = linkedContent.replace(
       new RegExp(`\\b${term}\\b`, "g"),
-      `[${term}](${link})`
+      `[${term}](${link})`,
     );
   });
 

@@ -8,20 +8,20 @@ export interface MysticalComponentProps {
 }
 
 // Cosmic energy levels for spiritual components
-export type CosmicEnergyLevel = 'low' | 'medium' | 'high' | 'transcendent';
+export type CosmicEnergyLevel = "low" | "medium" | "high" | "transcendent";
 
 // Aura colors aligned with chakras
-export type AuraColor = 
-  | 'red'      // Fire chakra
-  | 'orange'   // Sacral chakra  
-  | 'yellow'   // Solar chakra
-  | 'green'    // Heart chakra
-  | 'blue'     // Throat chakra
-  | 'indigo'   // Third eye chakra
-  | 'violet'   // Crown chakra
-  | 'purple'   // Mystical default
-  | 'gold'     // Sacred accent
-  | 'silver';  // Lunar accent
+export type AuraColor =
+  | "red" // Fire chakra
+  | "orange" // Sacral chakra
+  | "yellow" // Solar chakra
+  | "green" // Heart chakra
+  | "blue" // Throat chakra
+  | "indigo" // Third eye chakra
+  | "violet" // Crown chakra
+  | "purple" // Mystical default
+  | "gold" // Sacred accent
+  | "silver"; // Lunar accent
 
 // Content structure from markdown processing
 export interface MarkdownContent {
@@ -41,7 +41,7 @@ export interface CosmicMetadata {
   tags: string[];
   lastChanneled: string;
   wordCount: number;
-  mysticalLevel: 'novice' | 'adept' | 'master' | 'cosmic-sage';
+  mysticalLevel: "novice" | "adept" | "master" | "cosmic-sage";
   spiritualTags?: string[];
   nextPath?: string;
   energy?: CosmicEnergyLevel; // Alternative field name
@@ -63,7 +63,7 @@ export interface FDDRitual {
   id: string;
   name: string;
   description: string;
-  frequency: 'daily' | 'weekly' | 'monthly' | 'lunar' | 'special';
+  frequency: "daily" | "weekly" | "monthly" | "lunar" | "special";
   participants: string[];
   duration: string;
   cosmicRequirements: string[];
@@ -81,7 +81,7 @@ export interface TarotReading {
 // Mystical wisdom for random generation
 export interface MysticalWisdom {
   text: string;
-  source: 'manifesto' | 'ritual' | 'cosmic' | 'generated';
+  source: "manifesto" | "ritual" | "cosmic" | "generated";
   energy: CosmicEnergyLevel;
 }
 
@@ -107,24 +107,24 @@ export interface PageMetadata {
 // Error handling types
 export interface CosmicError {
   message: string;
-  type: 'cosmic' | 'spiritual' | 'technical' | 'mercury-retrograde';
-  severity: 'minor' | 'major' | 'catastrophic';
+  type: "cosmic" | "spiritual" | "technical" | "mercury-retrograde";
+  severity: "minor" | "major" | "catastrophic";
   guidance?: string;
 }
 
 // Loading states for mystical operations
-export type MysticalLoadingState = 
-  | 'consulting-stars'
-  | 'aligning-chakras' 
-  | 'channeling-wisdom'
-  | 'purifying-aura'
-  | 'communing-with-cosmos'
-  | 'idle';
+export type MysticalLoadingState =
+  | "consulting-stars"
+  | "aligning-chakras"
+  | "channeling-wisdom"
+  | "purifying-aura"
+  | "communing-with-cosmos"
+  | "idle";
 
 // Component test utilities
 export interface MysticalTestProps {
-  'data-testid'?: string;
-  'aria-label'?: string;
+  "data-testid"?: string;
+  "aria-label"?: string;
 }
 
 // Spiritual form data
@@ -132,7 +132,7 @@ export interface SpiritualFormData {
   seeker: string;
   question: string;
   energyLevel: CosmicEnergyLevel;
-  preferredGuidance: 'tarot' | 'wisdom' | 'cosmic-alignment';
+  preferredGuidance: "tarot" | "wisdom" | "cosmic-alignment";
 }
 
 // Site configuration
@@ -140,11 +140,11 @@ export interface SiteConfig {
   name: string;
   description: string;
   url: string;
-  cosmicAlignment: 'aligned' | 'misaligned' | 'transcendent';
-  mysticalMode: 'active' | 'dormant' | 'eclipse';
+  cosmicAlignment: "aligned" | "misaligned" | "transcendent";
+  mysticalMode: "active" | "dormant" | "eclipse";
 }
 
 // Export utility type helpers
 export type Optional<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
 export type WithCosmicEnergy<T> = T & { cosmicEnergy: CosmicEnergyLevel };
-export type MysticalComponent<T = {}> = React.FC<T & MysticalComponentProps>; 
+export type MysticalComponent<T = {}> = React.FC<T & MysticalComponentProps>;

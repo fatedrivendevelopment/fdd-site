@@ -14,7 +14,6 @@ _(FDD’s version of the Daily Stand-up)_
 
 - Begin with 3 minutes of silent meditation.
 - Each team member answers:
-
   1. "What did I notice yesterday?"
   2. "What am I energetically focused on today?"
   3. "Is there any karmic blockage in me?"
@@ -111,7 +110,6 @@ _(Replaces sprint retrospective)_
 
 - Team members close eyes and reflect inward.
 - Prompts:
-
   - "What did I transform into?"
   - "What did the code whisper to me?"
   - "What choice expanded my karma?"
